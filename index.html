@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Image Gallery | CodeAlpha</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Image Gallery</h1>
+        <p>CodeAlpha - Frontend Development Task 1</p>
+    </header>
+
+
+    <!-- Filter Buttons -->
+    <section class="filters">
+
+        <button class="filter-btn active" data-category="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-category="nature">
+            Nature
+        </button>
+
+        <button class="filter-btn" data-category="city">
+            City
+        </button>
+
+        <button class="filter-btn" data-category="technology">
+            Technology
+        </button>
+
+    </section>
+
+
+    <!-- Gallery -->
+    <main class="gallery">
+
+        <div class="gallery-item" data-category="nature">
+            <img
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80"
+                alt="Nature">
+            <div class="overlay">
+                <h3>Beautiful Nature</h3>
+                <p>Nature</p>
+            </div>
+        </div>
+
+
+        <div class="gallery-item" data-category="nature">
+            <img
+                src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80"
+                alt="Forest">
+            <div class="overlay">
+                <h3>Green Forest</h3>
+                <p>Nature</p>
+            </div>
+        </div>
+
+
+        <div class="gallery-item" data-category="city">
+            <img
+                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=800&q=80"
+                alt="City">
+            <div class="overlay">
+                <h3>City Lights</h3>
+                <p>City</p>
+            </div>
+        </div>
+
+
+        <div class="gallery-item" data-category="city">
+            <img
+                src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=800&q=80"
+                alt="City Building">
+            <div class="overlay">
+                <h3>Modern City</h3>
+                <p>City</p>
+            </div>
+        </div>
+
+
+        <div class="gallery-item" data-category="technology">
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                alt="Laptop">
+            <div class="overlay">
+                <h3>Developer Workspace</h3>
+                <p>Technology</p>
+            </div>
+        </div>
+
+
+        <div class="gallery-item" data-category="technology">
+            <img
+                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+                alt="Coding">
+            <div class="overlay">
+                <h3>Coding</h3>
+                <p>Technology</p>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <button id="closeBtn" class="close">
+            &times;
+        </button>
+
+        <button id="prevBtn" class="nav prev">
+            &#10094;
+        </button>
+
+        <img id="lightboxImg" src="" alt="">
+
+        <button id="nextBtn" class="nav next">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <footer>
+        <p>Built with HTML, CSS & JavaScript | CodeAlpha</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
