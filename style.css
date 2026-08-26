@@ -12,7 +12,7 @@ body {
 }
 
 
-/* Header */
+
 
 header {
     text-align: center;
@@ -31,7 +31,7 @@ header p {
 }
 
 
-/* Filter Buttons */
+
 
 .filters {
     display: flex;
@@ -73,7 +73,7 @@ header p {
 }
 
 
-/* Gallery */
+
 
 .gallery {
     width: 90%;
@@ -134,7 +134,7 @@ header p {
 }
 
 
-/* Overlay */
+
 
 .overlay {
     position: absolute;
@@ -172,7 +172,7 @@ header p {
 }
 
 
-/* Lightbox */
+
 
 .lightbox {
     position: fixed;
@@ -209,7 +209,7 @@ header p {
 }
 
 
-/* Close Button */
+
 
 .close {
     position: absolute;
@@ -234,7 +234,7 @@ header p {
 }
 
 
-/* Previous / Next */
+
 
 .nav {
     position: absolute;
@@ -276,7 +276,7 @@ header p {
 }
 
 
-/* Footer */
+
 
 footer {
     text-align: center;
@@ -289,7 +289,7 @@ footer {
 }
 
 
-/* Tablet */
+
 
 @media (max-width: 900px) {
 
@@ -301,7 +301,7 @@ footer {
 }
 
 
-/* Mobile */
+
 
 @media (max-width: 600px) {
 
