@@ -1,4 +1,4 @@
-// Get elements
+
 
 const filterButtons =
     document.querySelectorAll(".filter-btn");
@@ -22,16 +22,10 @@ const nextBtn =
     document.getElementById("nextBtn");
 
 
-// Current images
 
 let visibleImages = [];
 
 let currentIndex = 0;
-
-
-// ===============================
-// FILTER FUNCTION
-// ===============================
 
 filterButtons.forEach(button => {
 
@@ -77,20 +71,13 @@ filterButtons.forEach(button => {
 });
 
 
-// Initially show all images
-
 visibleImages = Array.from(galleryItems);
-
-
-// ===============================
-// OPEN LIGHTBOX
-// ===============================
 
 galleryItems.forEach(item => {
 
     item.addEventListener("click", () => {
 
-        // Find current image
+        
         currentIndex =
             visibleImages.indexOf(item);
 
@@ -105,11 +92,6 @@ galleryItems.forEach(item => {
     });
 
 });
-
-
-// ===============================
-// SHOW IMAGE
-// ===============================
 
 function showImage() {
 
@@ -131,9 +113,6 @@ function showImage() {
 }
 
 
-// ===============================
-// NEXT IMAGE
-// ===============================
 
 nextBtn.addEventListener("click", () => {
 
@@ -150,9 +129,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 
-// ===============================
-// PREVIOUS IMAGE
-// ===============================
+
 
 prevBtn.addEventListener("click", () => {
 
@@ -170,9 +147,7 @@ prevBtn.addEventListener("click", () => {
 });
 
 
-// ===============================
-// CLOSE LIGHTBOX
-// ===============================
+
 
 function closeLightbox() {
 
@@ -189,7 +164,6 @@ closeBtn.addEventListener(
 );
 
 
-// Close when clicking outside image
 
 lightbox.addEventListener("click", (event) => {
 
@@ -202,9 +176,6 @@ lightbox.addEventListener("click", (event) => {
 });
 
 
-// ===============================
-// KEYBOARD SUPPORT
-// ===============================
 
 document.addEventListener("keydown", (event) => {
 
